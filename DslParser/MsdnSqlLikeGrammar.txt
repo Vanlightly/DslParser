@@ -1,0 +1,14 @@
+﻿MATCH <match-condition>
+[AND|OR <match-condition>]
+BETWEEN 'yyyy-MM-dd HH:mm:ss' AND 'yyyy-MM-dd HH:mm:ss'
+LIMIT integer
+
+<match-condition>
+<object> {{=|!=|[NOT] LIKE} 'string_value'}|{[NOT] IN('string_value'[,'string_value']*)}
+
+<object>
+{app|application}
+|{ex|exception}
+|{msg|message}
+|{sf|stackframe}
+|{fp|fingerprint}
